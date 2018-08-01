@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- <form id="form-container" class="form-container">
+
+        <label for="street">Street: </label>
+
+        <input type="text" id="street" value="">
+
+        <label for="city">City: </label>
+
+        <input type="text" id="city" value="">
+
+        <button id="submit-btn">Submit</button>
+
+    </form>
+
+    <script type="text/javascript"> 
+    	var street=document.getElementById('street').value;
+    	console.log(street);
+
+    </script> -->
+
+<script type="text/javascript">
+	//Pure JS
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){
+
+    // readyState
+    //     0 - request not initialized
+    //     1 - server connection estabished
+    //     2 - request recieved
+    //     3 - processing the request
+    //     4 - request has finished and the data/response is ready
+    //
+    // Status
+    //     200 - OK
+    //     403 - Forbidden / need to log in
+    //     404 - Not found
+
+    if(this.status == 403){
+        console.log("Forbidden, cant access information");
+        return;
+    } else if(this.status == 404){
+        console.log("ERROR, file not found");
+        return;
+    }
+
+    if(this.status == 200 && this.readyState == 4){
+        console.log(this.responseText);
+        var data = JSON.parse(this.responseText);
+        console.log(data);
+    }
+};
+
+xhttp.open("GET", "http://api.nytimes.com/svc/search/v2/articlesearch.json?q= Trichy,%20India&sort=newest&api-key=", true);
+xhttp.send();
+
+/*$.ajax({
+    type: "GET",
+    url: "http://api.nytimes.com/svc/search/v2/articlesearch.json?q= Trichy,%20India&sort=newest&api-key=ec76b165acac4983b13004f88e84de13",
+    dataType: "json",
+    success: function(dataFromJSON){
+        console.log(dataFromJSON);
+    },
+    error: function(error){
+        console.log(error);
+        console.log("Something went wrong with the connection");
+    }
+})*/
+</script>
+</body>
+</html>
