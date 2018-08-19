@@ -1,0 +1,52 @@
+/* important css property - display 
+block-starts  on new line, takes up full widtheg. div, h1-h6, p, form, header, footer, section
+inline-no new line start, like span, a, img
+display;non to show and hide elements
+
+*/
+
+li{
+	display: block; 
+}
+
+.para1 {
+    /* div with normal width*/
+    width:600px;
+    margin: auto;
+    border: 5px solid black;
+}
+
+.para2 {
+    /* div with max-width & margin : auto will center horizontally, suitable for block-lelvel elements and small windows, devices*/
+    max-width:600px;
+    margin: auto;
+    border: 5px solid black;
+}
+
+/*div.relative {
+    position: fixed; remains fixed -others relative, static, obsolute
+    left: 30px;
+    border: 3px solid #73AD21;
+}*/
+/*div.para3{
+    /*overflow works for block elements with specified height*/
+    /*background-color: #eee;
+    width: 300px;
+    height: 100px;
+    border: 1px dotted black;
+    overflow:auto;*//*scroll, visible, auto like scroll*/
+  /*overflow-x: scroll;
+   overflow-y: hidden*/ /*  Add vertical scrollbar */
+  /*float:left;*/ /*left, right, none */
+   
+    
+  
+/*float used for positioning and layout, can be used to wrap text arount images ; clear must be used to remove float*/
+
+
+img {
+	float:left;
+}
+#para4{
+    clear:left;
+}
