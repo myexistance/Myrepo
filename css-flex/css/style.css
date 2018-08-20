@@ -1,18 +1,89 @@
+
+* {
+    box-sizing: border-box;/*width, padding is not reflected*/
+}
+header{
+    width:100%;
+    height:100px;
+    margin-top:50px;
+    margin-left:100px;
+    margin-right:100px;
+}
+h1{
+    background-image: linear-gradient(to right, yellow , orange);
+    color:black;
+    padding:50px 100px;
+}
+nav{
+    margin-top: 100px;
+    margin-left:100px;
+    margin-bottom:100px;
+}
+main{
+    margin-top:50px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;/*row for horizontal flex container, column for vertical*/
+  flex-wrap:nowrap;
+  background-color: yellow;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+aside{
+    width:25%;
+    float:right;
+
+}
+h2{
+    background-color: yellow;
+}
+
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    /*position: fixed;*/    
+    overflow: auto;
+}
 /* important css property - display 
-block-starts  on new line, takes up full widtheg. div, h1-h6, p, form, header, footer, section
+block-starts  on new line, takes up full width ...eg. div, h1-h6, p, form, header, footer, section
 inline-no new line start, like span, a, img
 display;non to show and hide elements
-
 */
-
 li{
-	display: block; 
+	display: inline; 
+    font-size: 2vw;
+    background-color: grey;
+    border:solid black;
 }
+li a{
+    text-decoration: none;
+}
+
+
+/*li a.active {
+    background-color: black;
+    color: white;
+}*/
+li:hover{
+    background-color: red;
+}
+
 
 .para1 {
     /* div with normal width*/
+   padding:25px;
+    margin:auto;
     width:600px;
-    margin: auto;
+    
     border: 5px solid black;
 }
 
@@ -22,7 +93,11 @@ li{
     margin: auto;
     border: 5px solid black;
 }
-
+.para4{
+    width:600px;
+    margin-left:200px;
+    padding:50px;
+   }
 /*div.relative {
     position: fixed; remains fixed -others relative, static, obsolute
     left: 30px;
@@ -43,10 +118,45 @@ li{
   
 /*float used for positioning and layout, can be used to wrap text arount images ; clear must be used to remove float*/
 
-
-img {
-	float:left;
+article{
+    margin-top:100px;
 }
-#para4{
+footer{
+    width:100%;
+    margin:auto;
+    padding: 100px;
+    background-color: yellow;
+}
+#tulip {
+	float:left;
+    opacity:0.5;
+    height:100px;
+
+
+}
+img:hover {
+    opacity:1;
+   
+}
+
+img::after{
     clear:left;
 }
+
+.responsive{
+    height:300px;
+    width:25%;
+    float:left;
+    opacity:1.0;
+    border:1px solid red;
+}
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 50%;
+        
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
