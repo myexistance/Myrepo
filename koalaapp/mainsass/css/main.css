@@ -1,0 +1,22 @@
+.navigation {
+  background-color: #03e5b2; }
+
+.navigation ul {
+  list-style: none;
+  padding: 20px; }
+.navigation li {
+  display: inline;
+  padding: 25px;
+  font-size: 1.5em;
+  font-family: "Verdana", Arial, sans-serif; }
+.navigation a {
+  text-decoration: none;
+  color: #09ab56; }
+
+.navbar li a:hover {
+  background: linear-gradient(red, green); }
+
+.footer-class {
+  background-color: #03e5b2; }
+
+/*# sourceMappingURL=main.css.map */

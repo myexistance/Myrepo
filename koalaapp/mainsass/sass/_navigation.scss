@@ -1,0 +1,28 @@
+$bgcolor:#03e5b2;
+$fonttype: "Verdana", Arial, sans-serif;
+$linkcolor: #09ab56;
+
+.navigation{
+	background-color:$bgcolor;
+}
+.navigation{
+	ul{
+	list-style:none;
+	padding: 20px;
+	}
+	li{
+	 display:inline;
+	 padding: 25px;
+	 font-size : 1.5em;
+	 font-family: $fonttype;
+	 }
+	a{
+	text-decoration:none;
+	color:$linkcolor;
+	}
+	
+}
+
+.navbar li a:hover {
+	background:linear-gradient(red,green);
+}

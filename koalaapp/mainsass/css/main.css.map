@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,WAAW;EACV,gBAAgB,EALR,OAAO;;AAQf,cAAE;EACF,UAAU,EAAC,IAAI;EACf,OAAO,EAAE,IAAI;AAEb,cAAE;EACD,OAAO,EAAC,MAAM;EACd,OAAO,EAAE,IAAI;EACb,SAAS,EAAG,KAAK;EACjB,WAAW,EAfF,4BAA4B;AAiBtC,aAAC;EACD,eAAe,EAAC,IAAI;EACpB,KAAK,EAlBM,OAAO;;AAuBnB,kBAAmB;EAClB,UAAU,EAAC,2BAA0B;;AC1BtC,aAAa;EACZ,gBAAgB,EDDR,OAAO",
+"sources": ["../sass/_navigation.scss","../sass/_footer.scss"],
+"names": [],
+"file": "main.css"
+}
